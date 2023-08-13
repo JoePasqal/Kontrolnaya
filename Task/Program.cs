@@ -13,13 +13,12 @@
         int index = 0;
         foreach (string item in inputArray)
         {
-            if (item.Length <= maxLength)
+            if (item != null && item.Length <= maxLength)
             {
                newArray[index] = item;
                index++;
             }
         }
-
         return newArray;
     }
 
